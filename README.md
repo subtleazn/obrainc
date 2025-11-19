@@ -48,3 +48,9 @@ Please note that this project is released with a Contributor Code of Conduct. By
 ## License
 
 This theme is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Author & Acknowledgments
+
+- **Author:** Nash Ang
+- **Portfolio:** https://subtleazn.github.io
+- **Acknowledgments:** This project was built to support the [PinoySeoul Media Enterprise](https://media.pinoyseoul.com).

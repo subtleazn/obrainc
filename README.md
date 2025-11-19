@@ -1,6 +1,6 @@
 # OBRA Inc. Blogger Theme
 
-This is a free, open-source Blogger theme designed to help non-profit organizations create a professional and engaging online presence. This theme is dedicated to the mission of the OBRA Inc. Foundation, which is to provide free, high-quality web templates to non-profits and charitable organizations around the world.
+This is a free, open-source Blogger theme designed to help non-profit organizations create a professional and engaging online presence. This theme is dedicated to the mission of the OBRA Inc. (Organisasyon ng Batikan at Respetading Artista ng Bayan, Incorporated), which is to provide free and accessible internet.
 
 ## Features
 

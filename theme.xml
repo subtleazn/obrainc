@@ -24,24 +24,30 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
       var curl = window.location.href;if (curl.indexOf('m=1') != -1) {curl = curl.replace('m=1', 'm=0');window.location.href = curl;}
       //]]></script>
     <b:include data='blog' name='all-head-content'/>
-    <title>
-      <b:if cond='data:blog.pageType == &quot;index&quot;'>
-        OBRA Inc.
-        <b:else/>
-        <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-          <data:blog.pageName/>
-          | OBRA Inc.
-          <b:else/>
-          404 | OBRA Inc.
-        </b:if>
-      </b:if>
-    </title>
+    <title><b:if cond='data:blog.pageType == &quot;index&quot;'><data:blog.title/><b:else/><data:blog.pageName/> | <data:blog.title/></b:if></title>
+    <link expr:href='data:blog.canonicalUrl' rel='canonical'/>
     <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+      <meta expr:content='data:blog.metaDescription' name='description'/>
       <meta expr:content='data:blog.metaDescription' property='og:description'/>
     </b:if>
     <b:if cond='data:blog.postImageUrl != &quot;&quot;'>
       <meta expr:content='data:blog.postImageUrl' property='og:image'/>
     </b:if>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <meta expr:content='data:blog.pageName' property='og:title'/>
+      <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+      <meta content='article' property='og:type'/>
+    </b:if>
+    <meta expr:content='data:blog.title' property='og:site_name'/>
+    <meta content='summary_large_image' name='twitter:card'/>
+    <meta expr:content='data:blog.pageName' name='twitter:title'/>
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+    </b:if>
+    <b:if cond='data:blog.postImageUrl'>
+      <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+    </b:if>
+    <meta expr:content='data:blog.canonicalUrl' name='twitter:url'/>
     <link href='https://fonts.googleapis.com/css?family=Basic' rel='stylesheet'/>
 	<b:skin><![CDATA[
 

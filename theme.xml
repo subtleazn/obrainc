@@ -6302,17 +6302,17 @@ $(function() {
                 <b:section class='menu-top' id='menu-top' maxwidgets='1' showaddelement='no'>
                   <b:widget id='LinkList100' locked='true' title='Top menu' type='LinkList' version='1'>
                     <b:widget-settings>
-                      <b:widget-setting name='link-3'>https://california.pinoyseoul.com</b:widget-setting>
+                      <b:widget-setting name='link-3'>https://work.pinoyseoul.com</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <b:widget-setting name='link-4'>https://work.pinoyseoul.com</b:widget-setting>
+                      <b:widget-setting name='link-4'>https://california.pinoyseoul.com</b:widget-setting>
                       <b:widget-setting name='text-1'>PinoySeoul.com</b:widget-setting>
                       <b:widget-setting name='link-1'>https://www.pinoyseoul.com</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
                       <b:widget-setting name='link-2'>https://dance.pinoyseoul.com</b:widget-setting>
-                      <b:widget-setting name='text-3'>PinoyCalifornia.com</b:widget-setting>
+                      <b:widget-setting name='text-3'>CloudWorkers.ph</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
-                      <b:widget-setting name='text-2'>DancePinoy.com</b:widget-setting>
-                      <b:widget-setting name='text-4'>CloudWorkers.ph</b:widget-setting>
+                      <b:widget-setting name='text-2'>Dance Pinoy</b:widget-setting>
+                      <b:widget-setting name='text-4'>Pinoy California</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
                       <div class='widget-content'>
@@ -8470,7 +8470,7 @@ $(".menu li ").each(function() {
                 <div class='about-me'>
                   <div class='cover-img-section'>
                     <b:section class='cover-img' id='cover-img' maxwidgets='1' showaddelement='no'>
-                      <b:widget id='Image1' locked='true' title='' type='Image' version='1'>
+                      <b:widget id='Image1' locked='true' title='15 Years of Building Community Through Art' type='Image' version='1'>
                         <b:widget-settings>
                           <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjZaj6ktXsktr1FBwscPsRh3PM6eO1XL3d_bdq-eG42m-qyPDtYzXxyEt4hkv5oaGfvk1-xDFPboxJy2Cr_k4QkA_obJqN1VWGPoo6ol2xT5Di-9ii9NAwE_nIpglglFsJx8ZA0WsTDsbG-8NpKi1KZ02eTkevUscJLqRV0KqVChtrC-M7VQFmuoil1eyhA=s1200</b:widget-setting>
                           <b:widget-setting name='displayHeight'>516</b:widget-setting>
@@ -8478,7 +8478,7 @@ $(".menu li ").each(function() {
                           <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                           <b:widget-setting name='displayWidth'>1200</b:widget-setting>
                           <b:widget-setting name='link'>/p/history.html</b:widget-setting>
-                          <b:widget-setting name='caption'/>
+                          <b:widget-setting name='caption'>We created projects that connect, celebrate, and uplift Filipino communities through artistic expression. This is the story of how a group of Filipino artists built platforms, told stories, and fostered community, one ambitious project at a time.</b:widget-setting>
                         </b:widget-settings>
                         <b:includable id='main'>
                           <b:if cond='data:title != &quot;&quot;'>
@@ -8597,6 +8597,86 @@ $(".menu li ").each(function() {
                 </div>
                 <!-- about me end here -->
                 <b:section class='sidebar' id='sidebar' showaddelement='yes'>
+                  <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
+                    <b:widget-settings>
+                      <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
+                      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+                      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+                      <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+                      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+                      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+                      <b:widget-setting name='chronological'>false</b:widget-setting>
+                      <b:widget-setting name='showPosts'>false</b:widget-setting>
+                      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+  <div id='ArchiveList'>
+  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
+    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
+    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
+  </div>
+  </div>
+  <b:include name='quickedit'/>
+  </div>
+</b:includable>
+                    <b:includable id='flat' var='data'>
+  <ul class='flat'>
+    <b:loop values='data:data' var='i'>
+      <li class='archivedate'>
+        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+      </li>
+    </b:loop>
+  </ul>
+</b:includable>
+                    <b:includable id='interval' var='intervalData'>
+  <b:loop values='data:intervalData' var='interval'>
+    <ul class='hierarchy'>
+      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+        <a class='post-count-link' expr:href='data:interval.url'>
+          <data:interval.name/>
+        </a>
+        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
+        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+      </li>
+    </ul>
+  </b:loop>
+</b:includable>
+                    <b:includable id='menu' var='data'>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
+    <b:loop values='data:data' var='i'>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+    </b:loop>
+  </select>
+</b:includable>
+                    <b:includable id='posts' var='posts'>
+  <ul class='posts'>
+    <b:loop values='data:posts' var='post'>
+      <li><a expr:href='data:post.url'><data:post.title/></a></li>
+    </b:loop>
+  </ul>
+</b:includable>
+                    <b:includable id='toggle' var='interval'>
+  <a class='toggle' href='javascript:void(0)'>
+    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+        &#9660;&#160;
+      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+        &#9668;&#160;
+      <b:else/>
+        &#9658;&#160;
+      </b:if>
+    </span>
+  </a>
+</b:includable>
+                  </b:widget>
                   <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
                     <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
@@ -8706,11 +8786,11 @@ head.appendChild(script);
                   <b:widget-settings>
                     <b:widget-setting name='link-3'>https://dance.pinoyseoul.com</b:widget-setting>
                     <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                    <b:widget-setting name='text-1'>PinoyCalifornia.com</b:widget-setting>
+                    <b:widget-setting name='text-1'>Pinoy California</b:widget-setting>
                     <b:widget-setting name='link-1'>https://california.pinoyseoul.com</b:widget-setting>
                     <b:widget-setting name='text-0'>PinoySeoul.com</b:widget-setting>
                     <b:widget-setting name='link-2'>https://work.pinoyseoul.com</b:widget-setting>
-                    <b:widget-setting name='text-3'>DancePinoy.com</b:widget-setting>
+                    <b:widget-setting name='text-3'>Dance Pinoy</b:widget-setting>
                     <b:widget-setting name='link-0'>https://www.pinoyseoul.com</b:widget-setting>
                     <b:widget-setting name='text-2'>CloudWorkers.ph</b:widget-setting>
                   </b:widget-settings>

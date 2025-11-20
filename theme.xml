@@ -87,8 +87,8 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
     </b:if>
     <meta expr:content='data:blog.title' property='og:site_name'/>
     <meta content='en_US' property='og:locale'/>
-    <meta name='twitter:site' content='@YourTwitterHandle'/>
-    <meta name='twitter:creator' content='@AuthorTwitterHandle'/>
+    <meta name='twitter:site' content='@pinoyseoul'/>
+    <meta name='twitter:creator' content='@pinoyseoul'/>
     <meta content='summary_large_image' name='twitter:card'/>
     <meta expr:content='data:blog.pageName' name='twitter:title'/>
     <b:if cond='data:blog.metaDescription'>

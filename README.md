@@ -7,8 +7,8 @@ This is a free, open-source Blogger theme designed to help non-profit organizati
 *   **Modern and Clean Design:** A professional design that is easy to read and navigate.
 *   **Responsive:** The theme is fully responsive and looks great on all devices, from desktops to mobile phones.
 *   **Customizable:** The theme is highly customizable, with a variety of layout and style options that can be configured from the Blogger theme customizer.
-*   **SEO Friendly:** The theme has been optimized for search engines, with a dynamic title tag structure, meta descriptions, and canonical tags.
-*   **Social Media Ready:** The theme includes Open Graph and Twitter Card meta tags to ensure that your articles are shared correctly on social media.
+*   **SEO Friendly:** The theme has been optimized for search engines with enhanced structured data. This includes a dynamic title tag structure, comprehensive meta descriptions, canonical tags, and advanced JSON-LD schema (WebSite and BlogPosting) to improve search engine understanding and visibility. A dynamic robots meta tag is also implemented for proper indexing control.
+*   **Social Media Ready:** The theme includes enhanced Open Graph and Twitter Card meta tags for optimal social media sharing on platforms like Facebook, LinkedIn, and X (formerly Twitter). Features include dynamic Open Graph types (e.g., 'website' for homepage, 'article' for posts), fallbacks for social media images, and dedicated meta tags for Twitter site and creator (placeholders require user customization).
 
 ## Customization
 

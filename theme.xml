@@ -24,29 +24,77 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
       var curl = window.location.href;if (curl.indexOf('m=1') != -1) {curl = curl.replace('m=1', 'm=0');window.location.href = curl;}
       //]]></script>
     <b:include data='blog' name='all-head-content'/>
-    <title><b:if cond='data:blog.pageType == &quot;index&quot;'><data:blog.title/><b:else/><data:blog.pageName/> | <data:blog.title/></b:if></title>
+    <title><b:if cond='data:blog.pageType == &quot;index&quot;'><data:blog.title/><b:else/><data:blog.pageName/> - <data:blog.title/></b:if></title>
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "<data:blog.title/>",
+  "url": "<data:blog.homepageUrl/>"
+}
+</script>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<data:blog.url.canonical/>"
+  },
+  "headline": "<data:blog.pageName/>",
+  "image": {
+    "@type": "ImageObject",
+    "url": "<b:if cond='data:blog.postImageUrl'><data:blog.postImageUrl/><b:else/>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx5GKgawvx8Im5Xe5Tu3_zXL4dnRPNWLylzb7iZ5278pHh-kWLybzb7iZ5278pHh-kWLs8UtTt1Ixh5jWHG1jzjVMFbD4OtMhinqL7_3A-HjoqZQCO_JVc6cLcYLS5oMsFR1gAKA9r6bPy4yGqhixOebrWqnEYHT/s1600/noimg.png</b:if>"
+  },
+  "datePublished": "<data:post.timestampISO8601/>",
+  "dateModified": "<data:post.timestampISO8601/>",
+  "author": {
+    "@type": "Person",
+    "name": "<data:post.author/>"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "<data:blog.title/>",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blogger.googleusercontent.com/img/a/AVvXsEje_UDG1Gg_-20iMZHCAU1wNQTQ-NiqwXkTzAqsQWRrDlECjF6bngxpbkz8dn-aOUfZGQbQKaDooOwFA-bJnDuYSztD0vdY0Ro5yUkv9EAwvyv6J7cl--PnKfAjfLV5CaIRoeQSAfXShqJdZN0BOVt8DoVFVfcDZd7mcNCEpuzwS7jB0Cs0yA2vrGf8Hzfa=s1600"
+    }
+  },
+  "description": "<data:blog.metaDescription/>"
+}
+</script>
+</b:if>
     <link expr:href='data:blog.url.canonical' rel='canonical'/>
+    <b:if cond='data:blog.pageType == &quot;archive&quot; or data:blog.pageType == &quot;search&quot; or data:blog.pageType == &quot;error_page&quot;'>
+      <meta content='noindex, nofollow' name='robots'/>
+    <b:else/>
+      <meta content='index, follow' name='robots'/>
+    </b:if>
     <b:if cond='data:blog.metaDescription != &quot;&quot;'>
       <meta expr:content='data:blog.metaDescription' name='description'/>
       <meta expr:content='data:blog.metaDescription' property='og:description'/>
     </b:if>
-    <b:if cond='data:blog.postImageUrl != &quot;&quot;'>
-      <meta expr:content='data:blog.postImageUrl' property='og:image'/>
-    </b:if>
+      <meta expr:content='data:blog.postImageUrl ? data:blog.postImageUrl : &quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx5GKgawvx8Im5Xe5Tu3_zXL4dnRPNWLylzb7iZ5278pHh-kWLs8UtTt1Ixh5jWHG1jzjVMFbD4OtMhinqL7_3A-HjoqZQCO_JVc6cLcYLS5oMsFR1gAKA9r6bPy4yGqhixOebrWqnEYHT/s1600/noimg.png&quot;' property='og:image'/>
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <meta expr:content='data:blog.pageName' property='og:title'/>
       <meta expr:content='data:blog.url.canonical' property='og:url'/>
       <meta content='article' property='og:type'/>
+    <b:else/>
+      <meta expr:content='data:blog.title' property='og:title'/>
+      <meta expr:content='data:blog.homepageUrl' property='og:url'/>
+      <meta content='website' property='og:type'/>
     </b:if>
     <meta expr:content='data:blog.title' property='og:site_name'/>
+    <meta content='en_US' property='og:locale'/>
+    <meta name='twitter:site' content='@YourTwitterHandle'/>
+    <meta name='twitter:creator' content='@AuthorTwitterHandle'/>
     <meta content='summary_large_image' name='twitter:card'/>
     <meta expr:content='data:blog.pageName' name='twitter:title'/>
     <b:if cond='data:blog.metaDescription'>
       <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
     </b:if>
-    <b:if cond='data:blog.postImageUrl'>
-      <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
-    </b:if>
+      <meta expr:content='data:blog.postImageUrl ? data:blog.postImageUrl : &quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx5GKgawvx8Im5Xe5Tu3_zXL4dnRPNWLylzb7iZ5278pHh-kWLs8UtTt1Ixh5jWHG1jzjVMFbD4OtMhinqL7_3A-HjoqZQCO_JVc6cLcYLS5oMsFR1gAKA9r6bPy4yGqhixOebrWqnEYHT/s1600/noimg.png&quot;' name='twitter:image'/>
     <meta expr:content='data:blog.url.canonical' name='twitter:url'/>
     <link href='https://fonts.googleapis.com/css?family=Basic' rel='stylesheet'/>
 	<b:skin><![CDATA[

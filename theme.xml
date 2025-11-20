@@ -54,12 +54,12 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
 /*
 
 <Group description="Template Colors" selector="body">
-  <Variable name="keycolor" description="Main Color" type="color" default="#f1c232" value="#d52c1f"/>
-  <Variable name="keycolor3" description="First" type="color" default="#8E54E9" value="#4f7ce8"/>
-  <Variable name="keycolor2" description="Second" type="color" default="#4776E6" value="#42e2e5"/>
+  <Variable name="keycolor" description="Main Color" type="color" default="#f1c232" value="#ffffff"/>
+  <Variable name="keycolor3" description="First" type="color" default="#8E54E9" value="#6898ec"/>
+  <Variable name="keycolor2" description="Second" type="color" default="#4776E6" value="#5de9e2"/>
 </Group>
 
-<Variable name="body.background" description="Body Background" type="background" default="$(color) none repeat scroll top left" value="#9e090b url(https://themes.googleusercontent.com/image?id=1boR97_H6UQaN1T-UDoOA5RZ3VHSD15X6Ah6l4I5cXbUkypGjXGLF-rNXu9nFHI0MIjO2) no-repeat fixed top center /* Credit: i-bob (http://www.istockphoto.com/portfolio/i-bob?platform=blogger) */"/>
+<Variable name="body.background" description="Body Background" type="background" default="$(color) none repeat scroll top left" value="#ffffff url(none) no-repeat fixed top center /* Credit: chuwy (http://www.istockphoto.com/portfolio/chuwy?platform=blogger) */"/>
 
 <Variable name="main.font" description="Main Font" type="font" default="normal normal 14px 'Montserrat' " value="normal normal 14px Open Sans"/>
 
@@ -83,12 +83,12 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
 <Group description="Post Body" selector=".post-info">
 	<Variable name="post.title.font" description="Post Title Font" type="font" default="normal bold 22px 'Montserrat'" value="normal bold 22px Open Sans"/>
 	<Variable name="item.post.title.font" description="Post Title Font In Singel Page" type="font" default="normal bold 30px 'Montserrat' " value="normal bold 30px Open Sans"/>
-	<Variable name="post.title.color" description="Post Title Color" type="color" default="#444" value="#313131"/>
+	<Variable name="post.title.color" description="Post Title Color" type="color" default="#444" value="#6b6b6b"/>
 </Group>
 
 <Group description="Sidebar Style" selector=".sidebar .widget h2">
 	<Variable name="sidebar.font" description="Sidebar Font" type="font" default="normal normal 15px 'Montserrat' " value="normal normal 15px Open Sans"/>
-	<Variable name="sidebar.color" description="Sidebar Color" type="color" default="#333" value="#000000"/>
+	<Variable name="sidebar.color" description="Sidebar Color" type="color" default="#333" value="#656565"/>
 </Group>
 
 <Group description="Footer style" selector="#footer-wrapper">
@@ -6229,7 +6229,7 @@ $(function() {
       <b:section class='home-style' id='home-style' maxwidgets='1' showaddelement='no'>
         <b:widget id='HTML111' locked='true' title='Boxed Style' type='HTML' version='1'>
           <b:widget-settings>
-            <b:widget-setting name='content'>boxed</b:widget-setting>
+            <b:widget-setting name='content'/>
           </b:widget-settings>
           <b:includable id='main'>
             <b:if cond='data:content == &quot;boxed&quot;'>
@@ -6365,13 +6365,13 @@ $(function() {
                 <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
                   <b:widget id='Header1' locked='true' title='OBRA Inc. (Header)' type='Header' version='1'>
                     <b:widget-settings>
-                      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjgBf8lzK4DHZ5_tI44QixSFQhVz6NmCEKSayGtC8Gl97oPO3c-mV7apu30egay12PHyslyyEDXKnVeFzoviI3Pt1koDgIyMAZ9g-FgkNRxyQFtqmAZDery7NOVGJON0T8lRSCfeBQKSMy2VYDA2UIdyQAT517VkpAihVsPjtBLDa32eKKqpezYRM_1Hssg=s820</b:widget-setting>
-                      <b:widget-setting name='displayHeight'>312</b:widget-setting>
+                      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEje_UDG1Gg_-20iMZHCAU1wNQTQ-NiqwXkTzAqsQWRrDlECjF6bngxpbkz8dn-aOUfZGQbQKaDooOwFA-bJnDuYSztD0vdY0Ro5yUkv9EAwvyv6J7cl--PnKfAjfLV5CaIRoeQSAfXShqJdZN0BOVt8DoVFVfcDZd7mcNCEpuzwS7jB0Cs0yA2vrGf8Hzfa=s1600</b:widget-setting>
+                      <b:widget-setting name='displayHeight'>609</b:widget-setting>
                       <b:widget-setting name='sectionWidth'>1152</b:widget-setting>
                       <b:widget-setting name='useImage'>true</b:widget-setting>
                       <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                       <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-                      <b:widget-setting name='displayWidth'>820</b:widget-setting>
+                      <b:widget-setting name='displayWidth'>1600</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
                       <b:if cond='data:useImage'>
@@ -6454,13 +6454,13 @@ $(function() {
                      <b:widget-setting name='link-3'>/p/about.html</b:widget-setting>
                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
                      <b:widget-setting name='link-4'>/p/contact.html</b:widget-setting>
-                     <b:widget-setting name='text-1'>News</b:widget-setting>
-                     <b:widget-setting name='link-1'>/search/label/News</b:widget-setting>
-                     <b:widget-setting name='text-0'>Stories</b:widget-setting>
-                     <b:widget-setting name='link-2'>/search/label/Archive</b:widget-setting>
-                     <b:widget-setting name='text-3'>About Us</b:widget-setting>
-                     <b:widget-setting name='link-0'>/search/label/Stories</b:widget-setting>
-                     <b:widget-setting name='text-2'>Archive</b:widget-setting>
+                     <b:widget-setting name='text-1'>Stories</b:widget-setting>
+                     <b:widget-setting name='link-1'>/search/label/Stories</b:widget-setting>
+                     <b:widget-setting name='text-0'>News</b:widget-setting>
+                     <b:widget-setting name='link-2'>/p/history.html</b:widget-setting>
+                     <b:widget-setting name='text-3'>About</b:widget-setting>
+                     <b:widget-setting name='link-0'>/search/label/News</b:widget-setting>
+                     <b:widget-setting name='text-2'>History</b:widget-setting>
                      <b:widget-setting name='text-4'>Contact</b:widget-setting>
                    </b:widget-settings>
                    <b:includable id='main'>
@@ -6728,7 +6728,7 @@ $(".menu li ").each(function() {
                   <b:section class='post-home-style' id='post-home-style' maxwidgets='1' showaddelement='no'>
                     <b:widget id='HTML957' locked='true' title='Post Home Style' type='HTML' version='1'>
                       <b:widget-settings>
-                        <b:widget-setting name='content'>grid</b:widget-setting>
+                        <b:widget-setting name='content'>list</b:widget-setting>
                       </b:widget-settings>
                       <b:includable id='main'>
                         <b:if cond='data:content == &quot;grid&quot;'>
@@ -8472,12 +8472,12 @@ $(".menu li ").each(function() {
                     <b:section class='cover-img' id='cover-img' maxwidgets='1' showaddelement='no'>
                       <b:widget id='Image1' locked='true' title='' type='Image' version='1'>
                         <b:widget-settings>
-                          <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAA8dp07bm7L-UJN0WehTWtZSiB0F8mmJWkH5FN_lipdua8ZSprTxI6igBCzwuNcmkBIRM4QVyw3EMwymWLh6LofJSK_3Oi8T-1dtdJRrxCxxQ3t_yIj5bxzVWkL-RROV0X7zBz9MRXNSB/s1600/120024863_108381701020997_7577648382385651643_n.jpg</b:widget-setting>
-                          <b:widget-setting name='displayHeight'>900</b:widget-setting>
-                          <b:widget-setting name='sectionWidth'>272</b:widget-setting>
+                          <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjZaj6ktXsktr1FBwscPsRh3PM6eO1XL3d_bdq-eG42m-qyPDtYzXxyEt4hkv5oaGfvk1-xDFPboxJy2Cr_k4QkA_obJqN1VWGPoo6ol2xT5Di-9ii9NAwE_nIpglglFsJx8ZA0WsTDsbG-8NpKi1KZ02eTkevUscJLqRV0KqVChtrC-M7VQFmuoil1eyhA=s1200</b:widget-setting>
+                          <b:widget-setting name='displayHeight'>516</b:widget-setting>
+                          <b:widget-setting name='sectionWidth'>332</b:widget-setting>
                           <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-                          <b:widget-setting name='displayWidth'>1600</b:widget-setting>
-                          <b:widget-setting name='link'>https://obraa.pinoyseoul.com</b:widget-setting>
+                          <b:widget-setting name='displayWidth'>1200</b:widget-setting>
+                          <b:widget-setting name='link'>/p/history.html</b:widget-setting>
                           <b:widget-setting name='caption'/>
                         </b:widget-settings>
                         <b:includable id='main'>
@@ -8503,12 +8503,12 @@ $(".menu li ").each(function() {
                     <b:section class='profile-img' id='profile-img' maxwidgets='1' showaddelement='no'>
                       <b:widget id='Image2' locked='true' title='Your Picture' type='Image' version='1'>
                         <b:widget-settings>
-                          <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEgvaAmtJSmjJx838LmAu-FPTxK8GxvtIw_3xT0sDwdU535x9is_uf9DKu27Mvmnsm96OGO2bJhmh3wRUobzA-Tni-6qmEAE304E0aPhx9cgGjC_THtJ01v3iv9-SHuP6LuKyh0s-Aa4h2e0SUbFxnQTf3i_8nMpb1zZfuNUc8TENGV98i6wHrjJYtcJL-Mj=s820</b:widget-setting>
-                          <b:widget-setting name='displayHeight'>312</b:widget-setting>
-                          <b:widget-setting name='sectionWidth'>344</b:widget-setting>
+                          <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEh_LvDKrtjTNLnFIuhOkp8SdTm_pylRxrCm9upIil8u1tFSMMcvAfETILJ6M8wcrVAOw9wV0EzZQJx-QCE7goH_fGyOeWGWMvA6gEq5SvrNpBmFHdWJdxmTBtaop_JhLxZwOSEFFELyAfhHYfkoVPRsD8-0JD7D36zsxungI-m57eS1pjAkSe4Zm2Hgk8pf=s1000</b:widget-setting>
+                          <b:widget-setting name='displayHeight'>1000</b:widget-setting>
+                          <b:widget-setting name='sectionWidth'>332</b:widget-setting>
                           <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-                          <b:widget-setting name='displayWidth'>820</b:widget-setting>
-                          <b:widget-setting name='link'>/</b:widget-setting>
+                          <b:widget-setting name='displayWidth'>1000</b:widget-setting>
+                          <b:widget-setting name='link'>/p/about.html</b:widget-setting>
                           <b:widget-setting name='caption'/>
                         </b:widget-settings>
                         <b:includable id='main'>
@@ -8535,7 +8535,7 @@ $(".menu li ").each(function() {
                     <b:section class='profile-caption' id='profile-caption' maxwidgets='1' showaddelement='no'>
                       <b:widget id='Text1' locked='true' title='OBRA Inc.' type='Text' version='1'>
                         <b:widget-settings>
-                          <b:widget-setting name='content'><![CDATA[<div style="text-align: center;"><b>OBRA Inc. is a Filipino cultural organization that uses theater, film, and multimedia to promote arts education and social awareness. It is known for community-oriented productions and training programs for youth and aspiring artists.</b></div>]]></b:widget-setting>
+                          <b:widget-setting name='content'><![CDATA[<div style="text-align: center;"><b>OBRA Inc. (Organisasyon ng Batikan at Respetadong Artista ng Bayan, Incorporated) </b>is a non-stock, non-profit cultural association formally established in December 2007 to develop, uplift and promote Filipino skills and talents through art as the medium. We have served as a cultural force dedicated to shaping and uplifting the Filipino national identity through purposeful, high-impact creative interventions. </div>]]></b:widget-setting>
                         </b:widget-settings>
                         <b:includable id='main'>
                           <!-- only display title if it's non-empty -->

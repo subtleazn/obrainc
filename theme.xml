@@ -24,7 +24,11 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
       var curl = window.location.href;if (curl.indexOf('m=1') != -1) {curl = curl.replace('m=1', 'm=0');window.location.href = curl;}
       //]]></script>
     <b:include data='blog' name='all-head-content'/>
-    <title><b:if cond='data:blog.pageType == &quot;index&quot;'><data:blog.title/><b:else/><data:blog.pageName/> - <data:blog.title/></b:if></title>
+    <b:if cond='data:view.isHomepage'>
+      <title><data:blog.title.escaped/></title>
+    <b:else/>
+      <title><data:view.title.escaped/> - <data:blog.title.escaped/></title>
+    </b:if>
 <script type='application/ld+json'>
 {
   "@context": "http://schema.org",

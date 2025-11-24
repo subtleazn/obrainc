@@ -27,41 +27,41 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
     <title><b:if cond='data:blog.pageType == &quot;index&quot;'><data:blog.title/><b:else/><data:blog.pageName/> - <data:blog.title/></b:if></title>
 <script type='application/ld+json'>
 {
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "<data:blog.title/>",
-  "url": "<data:blog.homepageUrl/>"
+  &quot;@context&quot;: &quot;http://schema.org&quot;,
+  &quot;@type&quot;: &quot;WebSite&quot;,
+  &quot;name&quot;: &quot;<data:blog.title/>&quot;,
+  &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;
 }
 </script>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <script type='application/ld+json'>
 {
-  "@context": "http://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "<data:blog.url.canonical/>"
+  &quot;@context&quot;: &quot;http://schema.org&quot;,
+  &quot;@type&quot;: &quot;BlogPosting&quot;,
+  &quot;mainEntityOfPage&quot;: {
+    &quot;@type&quot;: &quot;WebPage&quot;,
+    &quot;@id&quot;: &quot;<data:blog.url.canonical/>&quot;
   },
-  "headline": "<data:blog.pageName/>",
-  "image": {
-    "@type": "ImageObject",
-    "url": "<b:if cond='data:blog.postImageUrl'><data:blog.postImageUrl/><b:else/>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx5GKgawvx8Im5Xe5Tu3_zXL4dnRPNWLylzb7iZ5278pHh-kWLybzb7iZ5278pHh-kWLs8UtTt1Ixh5jWHG1jzjVMFbD4OtMhinqL7_3A-HjoqZQCO_JVc6cLcYLS5oMsFR1gAKA9r6bPy4yGqhixOebrWqnEYHT/s1600/noimg.png</b:if>"
+  &quot;headline&quot;: &quot;<data:blog.pageName/>&quot;,
+  &quot;image&quot;: {
+    &quot;@type&quot;: &quot;ImageObject&quot;,
+    &quot;url&quot;: &quot;<b:if cond='data:blog.postImageUrl'><data:blog.postImageUrl/><b:else/>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx5GKgawvx8Im5Xe5Tu3_zXL4dnRPNWLylzb7iZ5278pHh-kWLybzb7iZ5278pHh-kWLs8UtTt1Ixh5jWHG1jzjVMFbD4OtMhinqL7_3A-HjoqZQCO_JVc6cLcYLS5oMsFR1gAKA9r6bPy4yGqhixOebrWqnEYHT/s1600/noimg.png</b:if>&quot;
   },
-  "datePublished": "<data:post.timestampISO8601/>",
-  "dateModified": "<data:post.timestampISO8601/>",
-  "author": {
-    "@type": "Person",
-    "name": "<data:post.author/>"
+  &quot;datePublished&quot;: &quot;<data:post.timestampISO8601/>&quot;,
+  &quot;dateModified&quot;: &quot;<data:post.timestampISO8601/>&quot;,
+  &quot;author&quot;: {
+    &quot;@type&quot;: &quot;Person&quot;,
+    &quot;name&quot;: &quot;<data:post.author/>&quot;
   },
-  "publisher": {
-    "@type": "Organization",
-    "name": "<data:blog.title/>",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://blogger.googleusercontent.com/img/a/AVvXsEje_UDG1Gg_-20iMZHCAU1wNQTQ-NiqwXkTzAqsQWRrDlECjF6bngxpbkz8dn-aOUfZGQbQKaDooOwFA-bJnDuYSztD0vdY0Ro5yUkv9EAwvyv6J7cl--PnKfAjfLV5CaIRoeQSAfXShqJdZN0BOVt8DoVFVfcDZd7mcNCEpuzwS7jB0Cs0yA2vrGf8Hzfa=s1600"
+  &quot;publisher&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;<data:blog.title/>&quot;,
+    &quot;logo&quot;: {
+      &quot;@type&quot;: &quot;ImageObject&quot;,
+      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/a/AVvXsEje_UDG1Gg_-20iMZHCAU1wNQTQ-NiqwXkTzAqsQWRrDlECjF6bngxpbkz8dn-aOUfZGQbQKaDooOwFA-bJnDuYSztD0vdY0Ro5yUkv9EAwvyv6J7cl--PnKfAjfLV5CaIRoeQSAfXShqJdZN0BOVt8DoVFVfcDZd7mcNCEpuzwS7jB0Cs0yA2vrGf8Hzfa=s1600&quot;
     }
   },
-  "description": "<data:blog.metaDescription/>"
+  &quot;description&quot;: &quot;<data:blog.metaDescription/>&quot;
 }
 </script>
 </b:if>
@@ -87,8 +87,8 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
     </b:if>
     <meta expr:content='data:blog.title' property='og:site_name'/>
     <meta content='en_US' property='og:locale'/>
-    <meta name='twitter:site' content='@pinoyseoul'/>
-    <meta name='twitter:creator' content='@pinoyseoul'/>
+    <meta content='@pinoyseoul' name='twitter:site'/>
+    <meta content='@pinoyseoul' name='twitter:creator'/>
     <meta content='summary_large_image' name='twitter:card'/>
     <meta expr:content='data:blog.pageName' name='twitter:title'/>
     <b:if cond='data:blog.metaDescription'>
